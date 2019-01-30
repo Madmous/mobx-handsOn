@@ -8,7 +8,12 @@ import { Store as MobxProps } from './store';
 type Props = MobxProps;
 
 const Trip = (props: Props) => {
-  const { startDate, endDate, travelDestination, travelCostInEuro } = props;
+  const {
+    startDate,
+    endDate,
+    travelDestination,
+    travelCostInEuro,
+  } = props;
 
   return (
     <div>

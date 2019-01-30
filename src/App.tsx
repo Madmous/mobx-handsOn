@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
 
+import tripStore from './trip/store';
+import personalInformationStore from './personal-information/store';
 import Trip from './trip/Trip';
 
 class App extends Component {
   render() {
-    return (
-      <Trip
-        travelDestination={''}
-        startDate={''}
-        endDate={''}
-        travelCostInEuro={0}
-      />
-    );
+    return <div>
+      <MainInsuredPerson {...personalInformationStore}  />
+      <Trip {...tripStore} />
+      </div>
   }
 }
 
