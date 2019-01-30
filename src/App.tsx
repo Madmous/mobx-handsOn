@@ -6,10 +6,13 @@ import Trip from './trip/Trip';
 
 class App extends Component {
   render() {
-    return <div>
-      <MainInsuredPerson {...personalInformationStore}  />
-      <Trip {...tripStore} />
+    return (
+      <div>
+        <MainInsuredPerson {...personalInformationStore} />
+        <Trip {...tripStore} />
+        <button onClick={() => {}}>Send</button>
       </div>
+    );
   }
 }
 
